@@ -104,6 +104,8 @@ document.querySelector("#slider").addEventListener("change", function(){
 	let volVal = volObj.value;
 	document.getElementById("volume").innerHTML = volVal + "%";
 	console.log("The current value is " + (volVal / 100));
+	// Set volume of the video.
+	video.volume = (volVal / 100);
 });
 
 // Utilize existing oldSchool class on the video element.
